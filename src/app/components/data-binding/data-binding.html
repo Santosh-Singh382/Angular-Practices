@@ -1,0 +1,42 @@
+<h2>Data-binding works!</h2>
+
+<div class="row">
+  <div class="col-4">
+    On way - from .ts to .html
+  </div>
+  <div class="col-4"></div>
+  <div class="col-4"></div>
+</div>
+
+<div class="row mt-3">
+  <!-- Left Column -->
+  <div class="col-4">
+    <div class="row">
+      <!-- Interpolation -->
+      <div class="col-6 bg-success p-2">
+        <h5>Interpolation</h5>
+        <h3>{{ courseName }}</h3>
+        <div>{{ inputType }}</div>
+        <input type="text" value="{{ courseName }}" placeholder="Enter text" />
+        <input type="{{ inputType }}" />
+      </div>
+
+      <!-- Property Binding -->
+      <div class="col-6 p-2">
+        <h5>Property Binding</h5>
+        <div [class]="myClassName">Danger</div>
+        <input type="text" [value]="courseName" placeholder="Enter text" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle Column -->
+  <div class="col-4 text-center">
+    <button class="btn btn-success" (click)="showAlert('Welcome Angular 18')">
+      Show Welcome
+    </button>
+  </div>
+
+  <!-- Right Column -->
+  <div class="col-4"></div>
+</div>

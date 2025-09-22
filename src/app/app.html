@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand" routerLink="/">Logo</a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Items -->
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Add Employee -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/add-employee" routerLinkActive="active">Add Employee</a>
+        </li>
+
+        <!-- Data Binding -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/data-binding" routerLinkActive="active">Data Binding</a>
+        </li>
+
+        <!-- Employee List -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/employee-list" routerLinkActive="active">Employee List</a>
+        </li>
+
+        <!-- Structural Directive -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/structural-div" routerLinkActive="active">Structural Directive</a>
+        </li>
+
+        <!-- Attribute Directive -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/attribute-directive" routerLinkActive="active">Attribute Directive</a>
+        </li>
+
+        <!-- ✅ Reactive Form -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/reactive" routerLinkActive="active">Reactive Form</a>
+        </li>
+      </ul>
+
+      <!-- Search -->
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Routed Components will load here -->
+<div class="container mt-3">
+  <router-outlet></router-outlet>
+</div>

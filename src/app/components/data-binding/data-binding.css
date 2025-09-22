@@ -1,0 +1,52 @@
+/* Title styling */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* First row (ts -> html note) */
+.row:first-child .col-4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Interpolation Block */
+.bg-success {
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Property Binding Block */
+.col-4:not(.bg-success) {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Inputs */
+input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Button block */
+button.btn {
+  display: block;
+  margin: 30px auto;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 6px;
+}

@@ -1,0 +1,20 @@
+<div class="card mt-3 shadow p-3" style="max-width: 500px; margin:auto;">
+  <h4>Add Employee</h4>
+  
+  <div class="mb-3">
+    <label class="form-label">Name</label>
+    <input type="text" [(ngModel)]="name" class="form-control">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Email</label>
+    <input type="email" [(ngModel)]="email" class="form-control">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Salary</label>
+    <input type="number" [(ngModel)]="salary" class="form-control">
+  </div>
+
+  <button class="btn btn-success" (click)="addEmployee()">Add Employee</button>
+</div>

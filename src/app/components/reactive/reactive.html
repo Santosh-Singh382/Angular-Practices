@@ -1,0 +1,57 @@
+<div class="mt-2 p-2 bg-secondary text-with rounded">
+    <h1>Reactive Forms</h1>
+    <p>FormGroup, FormControl, FormArray...</p>
+</div>
+<div class="row">
+    <div class="col-8">
+        <form class="row g-3" [formGroup]="studentForm">
+            <div class="col-md-4">
+                <label class="form-label">First Name</label>
+                <input type="text" formControlName = "firstName" class="form-control">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Last Name</label>
+                <input type="text" formControlName ="lastName"  class="form-control">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Username</label>
+                <div class="input-group">
+                    <span class="input-group-text"><span>&#64; </span>  </span>
+                    <input formControlName = "userName" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">City</label>
+                <input type="text" formControlName = "city" class="form-control">
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">State</label>
+                <select formControlName = "state" class="form-select">
+                    <option selected>Choose...</option>
+                    <option >Bihar</option>
+                    <option >Odisha</option>
+                    <option >Punjab</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Zip</label>
+                <input type="text" formControlName = "zipCode" class="form-control">
+            </div>
+            <div class="col-md-12">
+                <div class="form-check">
+                    <input class="form-check-input" formControlName = "isAcceptTerms" type="checkbox" >
+                    <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="button" (click)="resetForm()">Reset form</button>
+                <button class="btn btn-primary mx-2" type="button" (click)="onSave()">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-4">
+        {{ formvalue | json }}
+    </div>
+</div>
