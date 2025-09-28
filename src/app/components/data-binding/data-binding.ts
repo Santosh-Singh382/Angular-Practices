@@ -28,6 +28,7 @@ export class DataBinding {
 
   constructor() {
 
+    
   }
 
   showAlert(message : string) {
